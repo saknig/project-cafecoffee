@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1158px)" href="phone.css">
+        <script src="/CafeCoffee/javaScript/jq.js"></script>
+        <script src="/CafeCoffee/javaScript/java.js"></script>
+</head>
+
+<body>
+
+    <!-- landing page -->
+    <div class="main" id="mainpage">
+        <img src="/CafeCoffee/image/hero.jpg">
+        <div class="nav2" id="navv">
+            <a href="index.html"><img src="/CafeCoffee/image/logo.png"></a>
+            <img  id="hidden" src="image/menuwithbg.png">
+            <div class="bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#main">Order</a></li>
+                    <li><a href="index.html#membership">Membership</a></li>
+                    <li><a href="index.html#Team">Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title">
+            <h1>CAFE</h1>
+            <h1>COFFEE</h1>
+            <p>Welcome to the world of rich coffee and taste. <br>Try the flavor of original coffee at nominal prices.
+            </p>
+        </div>
+    </div>
+    <!-- End of landing page -->
+
+
+    
+
+
+    <!-- order section -->
+    <div class="main" id="main">
+        <img src="/CafeCoffee/image/coffee1.jpg">
+        <div class="head">
+            
+            <!-- heading for page -->
+            <div class="top"> 
+                <h2>Place your Order</h2>
+                <p>A wide range of awesome high quality refined coffee sesoned from fresh coffee beans.</p>
+            </div>
+            <!-- End of heading -->
+            <div class="product">
+                <!-- first element -->
+                <div id="base" class="O"  onclick="cap()">
+                    <img src="/CafeCoffee/image/coffee2.jpg" id="cap">
+                    <h3>Cappacino</h3>
+                    <p>the perfect balance of espresso, steamed milk and foam.An expertly made cappuccino should be rich,
+                    but not acidic and have a mildly sweet flavouring from the milk.</p>
+                </div>
+                <!-- End of first Element -->
+
+
+                <!-- second element -->
+                <div id="base2" class="O"  onclick="ame()">
+                    <img src="/CafeCoffee/image/coffee3.jpg" id="ame">
+                    <h3>Americano</h3>
+                    <p>Combines freshly pulled shots of espresso with hot water to achieve the size of a standard cup of
+                    brewed coffee.</p>
+                </div>
+                <!-- End of second element -->
+
+
+                <!-- third element -->
+                <div id="base3" class="O" onclick="lat()">
+                    <img src="/CafeCoffee/image/coffee4.jpg" id="lat">
+                    <h3>Latte</h3>
+                    <p>a single or double shot of espresso. This espresso is then combined with several ounces of steamed
+                    milk to create a rich, creamy beverage that has a more subtle espresso taste. </p>
+                </div>
+                <!-- End of third element -->
+
+
+                <!-- fourth element -->
+                <div id="base4"  class="O" onclick="tea()">
+                    <img src="/CafeCoffee/image/bubble tea.jpg">
+                    <h3>Bubble Tea</h3>
+                    <p>a Taiwanese recipe made by blending tea with milk, fruit and fruit juices, then adding tasty tapioca pearls and shaking vigorously</p>
+                </div>
+                <!-- end of fourth element -->
+
+
+            </div>
+
+            <!-- Pricing box Creation -->
+            <div class="bottom" id="foot">
+            <form action="Order.html" method="get" onsubmit="return validate()">
+                    <div class="block1">
+                        <h2>Products</h2>
+                        <h2>Pricing</h2>
+                        <h2>Quantity</h2>
+                    </div>
+                    <br><br>
+                    <div class="block2">
+                        <p class="para">Capaccino</p>
+                        <input type="text" id="pr1" class="pr" name="pr1" value="130" readonly>
+                        <input type="text" id="q1" class="q" name="q1">
+                    </div>
+                    <div class="block3">
+                        <p class="para">Americano</p>
+                        <input type="text" id="pr2" class="pr" name="pr2" value="110" readonly>
+                        <input type="text" id="q2" class="q" name="q2" >
+                    </div>
+                    <div class="block4">
+                        <p class="para">Latte</p>
+                        <input type="text" id="pr3" class="pr" name="pr3" value="150" readonly>
+                        <input type="text" id="q3" class="q" name="q3">
+                    </div>
+                    <div class="block5">
+                        <p class="para">Bubble Tea</p>
+                        <input type="text" id="pr4" class="pr" name="pr4" value="99" readonly>
+                        <input type="text" id="q4" class="q" name="q4">
+                    </div>
+                    <input type="submit" id="submit" class="btn" value="Order">
+                </form>
+            </div>
+            <!-- End of pricing box -->
+
+
+        </div>
+    
+    </div>
+    <!-- End of Order section -->
+
+
+    <div class=membership id="membership">
+        <div class="block">
+            <div class="options" id="member" onclick="member()">Membership form</div>
+            <div class="options"  id="context" onclick="contact()">Contact Details</div>
+            <div class="options" id="offerclick" onclick="offer()">Offers</div>
+        </div>
+            <div class="optiondetail">
+                <div class="thanksmessage" id="thanksmessage">
+                    Thanks for being a part of the family..
+                    It a long journey lets walk together!!
+                </div>
+                <div id="offer">
+                    <h1>Offers</h1>
+                    <div class="offerinside">Get 5% discount on your first order.</div>
+                    <div class="offerinside">Get 10% discount on your order of Rs 100.</div>
+                    <div class="offerinside">Get 15% discount on your first order of Rs 230.</div>
+                    <div class="offerinside">Get bubble tea free on your order above 700.</div>
+                    <div class="offerinside">Get latte free on your order above 1000</div>
+                </div>
+                <div id="contact">
+                    <h1>Contact Us</h1>
+                    <img src="/CafeCoffee/image/locationpin.png" height="40px">123,abcs road ,abcd-34211<br><br><br>
+                    <img src="/CafeCoffee/image/insta.png" height="30px">CafeCoffee<br><br><br>
+                    <img src="/CafeCoffee/image/web.png" height="40px">www.cafecoffee.com<br><br><br>
+                    <img src="/CafeCoffee/image/mail.png" height="20px">CafeCoffee@gmail.com<br><br><br>
+                </div>
+            <div class="form" id="form" >
+                <h1>Be A Member</h1>
+                <p>Enjoy the offer before anybody else...</p><span id="note"><b></b></span>
+                <form action="form.php" method="post"  onsubmit="return validateform()">
+                    <ul>
+                        <li>Name<input type="text" id="n1" class="ani" name="fname" placeholder="Enter your name here">
+                        </li><br>
+    
+                        <li>Email<input type="email" id="n2" class="ani"></li><br>
+                        <li>Password<input type="password" id="n3" class="ani"></li><br>
+                        <li>Are you a coffe lover...<br><input type="radio" id="g" name="gender" value="Male" >
+                            YES<input type="radio" id="ga" name="gender" value="Female" >NO</li>
+                        <br>
+                        <li>Write about your love for coffee:<br><textarea cols="20" rows="5"></textarea></li>
+    
+                        <li><input id="btn" class="ani" type="submit" value="submit"></li>
+                    </ul>
+                </form>
+            </div>
+            </div>
+        
+    </div>
+
+</body>
+<script src="javaScript/java.js"></script>
+
+</html>
